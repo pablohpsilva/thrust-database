@@ -23,7 +23,7 @@ var _getConnection = function (datasource) {
 }
 
 var _closeClosable = function (closable) {
-  if (Object.hasOwnProperty.call('close')) {
+  if (Object.hasOwnProperty.call(closable, 'close')) {
     closable.close()
   }
 }
